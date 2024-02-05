@@ -1,0 +1,491 @@
+@font-face {
+    font-family: 'nec';
+    src: url(./font/NeueHaasDisplayMediu.ttf);
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+
+}
+
+
+#nav{
+    padding: 2vW 0vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.nav-part2 h3{
+    padding: 10px 20px;
+    border: 1px solid #0000003c;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000bb;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.nav-part2 h3::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+.nav-part2 h3:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+.nav-part2 h3 a {
+    color: #000000bb;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+.nav-part2 h3:hover a {
+    color: #fff;
+}
+
+#center{
+    height: 65vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2.5vw;
+}
+
+#left{
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+
+#center h1{
+    font-size: 13vw;
+    text-align: right;
+    line-height: 10vw;
+}
+
+.page1 video{
+    position: relative;
+border-radius: 30px;
+    width: 100%;
+margin-top: 4vw;
+}
+
+#hero-shape {
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    right: 0;
+    top: 65vh;
+}
+
+#hero-1 {
+    background-color: #FE320A;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(10px);
+    position: absolute;
+}
+
+#hero-2 {
+    background: linear-gradient(#FE320A, #fe3f0a);
+
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(25px);
+}
+
+#hero-3 {
+    background: linear-gradient(#FE320A, #fe3f0a);
+    height: 30vw;
+    position: absolute;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(55%, -3%);
+    }
+
+    to {
+        transform: translate(0%, 10%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+}
+
+#movingtext{
+    white-space: nowrap;
+    overflow: auto;
+}
+
+#movingtext::-webkit-scrollbar{
+display: none;
+}
+
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 8vw 0vw;
+    background-color:  white;
+    position: relative;
+  
+}
+
+#page2 h1{
+    font-size: 15vh;
+    display: inline-block;
+
+}
+
+.gola{
+    height: 70px;
+    width: 70px;
+    background-color: #FE320A;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#page2-bottom{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    padding: 4.5vw;
+    justify-content: space-between;
+}
+
+#page2-bottom h2{
+    font-size: 4vw;
+    width: 60%;
+    line-height: 4vw;
+}
+
+#bottom-part2{
+    width: 20%;
+    margin-right: 2vw;
+    
+}
+
+#bottom-part2 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+#bottom-part2 p{
+    font-weight: 100;
+    margin-top: 2vw;
+    font-size: 1vw;
+}
+
+.goli{
+    height: 32vw;
+    width: 32vw;
+    background: linear-gradient(to top, #FE320A, #fe5b0a);
+    position: absolute;
+    top:53%;
+    left: 28%;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation-name: goli;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes goli {
+    from{
+    filter: blur(20px);
+        transform: translate(10%, -10%) skew(0);
+    }
+    to{
+    filter: blur(30px);
+        transform: translate(-10%, 10%) skew(-5deg);
+    }
+}
+
+.page3{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.elem {
+    height: 150px;
+    width: 100%;
+    position: relative;
+
+    border-bottom: 1px solid #38383864;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.elem h2 {
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.25s;
+}
+
+.elem:hover .overlay {
+    top: 0;
+}
+
+
+#fixed-img{
+    height: 30vw;
+    width: 23vw;
+    border-radius: 10%;
+    position: fixed;
+    z-index: 9;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+    z-index: 20;
+}
+
+
+
+
+.page5{
+    height: 80vh;
+    width: 100%;
+    
+    
+    }
+    .main{
+        position: relative;
+        z-index: 10;
+    }
+
+    .footer{
+        position: fixed;
+        z-index: 9;
+        height: 100vh;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+       
+        
+        
+    }
+    .footer h1{
+        padding-top: 20%;
+        z-index: 9;
+        font-size: 23vw;}
+
+        #footer-div{
+            height: 40vh;
+            width: 160%;
+            background-color: red;
+        position: fixed;
+bottom: 42vh;
+animation: footer1;
+animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(25px);
+    z-index: 5;
+        }
+        @keyframes footer1 {
+            from {
+                transform: translate(0%, 30%);
+    border-radius: 30%;
+
+            }
+        
+            to {
+                transform: translate(20%, 0%);
+    border-radius: 50%;
+    skew(-5deg);
+
+            }
+        }
+        
+        
+#footer-div2{
+    height: 40vh;
+    width: 160%;
+    background-color: red;
+position: fixed;
+bottom: 42vh;
+filter: blur(25px);
+}
+
+.page4{
+   
+}
+
+.flex1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 9;
+    justify-content: space-between;
+    position: fixed;
+    top: 40%;
+left: 5%;
+}
+
+.flex1 h2{
+    font-size: 5vh;
+}
+
+.flex1 input{
+    color: #efeae3;
+    background-color: transparent;
+    border: 1px #000;
+    border-bottom-color: rgba(239,234,227,.3);
+    margin-bottom: 0;
+    padding: 1em 0;
+    font-family: Neuehaasdisplay roman,sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.4;
+    
+}
+.space{
+    padding-right: 15%;
+}
+
+.flex3{
+    font-size: 2.5vh;
+}
+#page4 {
+    height: 50vh;
+    width: 100%;
+   background-color: white;
+    padding: 10vw 2vw;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 60vh;
+    
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .para {
+    position: absolute;
+    top: 0;
+    font-size: 2vh;
+    text-align: left;
+    border-right: #d6c3c3 solid 2px;
+    
+}
+
+ 
